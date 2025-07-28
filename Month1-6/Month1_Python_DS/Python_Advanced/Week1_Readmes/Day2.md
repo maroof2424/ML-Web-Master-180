@@ -1,28 +1,29 @@
-✅ Day 2: Lambda, map, filter, reduce
-📌 Topics Covered:
+Here's the markdown for **✅ Day 2** in your `README.md` file:
 
-Lambda Functions: Anonymous inline functions
+---
 
-map() Function: Apply a function to all items in an iterable
+### ✅ Day 2: Lambda, map, filter, reduce
 
-filter() Function: Filter items based on a condition
+📌 **Topics Covered:**
 
-reduce() Function: Reduce a list to a single value (from functools)
+* **Lambda Functions:** Anonymous inline functions
+* **`map()` Function:** Apply a function to all items in an iterable
+* **`filter()` Function:** Filter items based on a condition
+* **`reduce()` Function:** Reduce a list to a single value (from `functools`)
 
-🧠 Why it matters:
-These tools enable functional programming, allowing concise, readable, and powerful data transformations.
+🧠 **Why it matters:**
+These tools enable **functional programming**, allowing concise, readable, and powerful data transformations.
 
-📂 File:
-Code examples and exercises are inside 02_lambda_map_filter_reduce.py
+📂 **File:**
+Code examples and exercises are inside `02_lambda_map_filter_reduce.py`
 
-🧪 Practice Tasks (inside file):
+🧪 **Practice Tasks (inside file):**
 
-Double a list using map() and lambda
+* Double a list using `map()` and `lambda`
+* Filter even numbers using `filter()` and `lambda`
+* Calculate factorial using `reduce()`
+* Sort list of tuples by second element using `lambda`
 
-Filter even numbers using filter() and lambda
+---
 
-Calculate factorial using reduce()
-
-Sort list of tuples by second element using lambda
-
-Let me know if you want the actual Python code template (02_lambda_map_filter_reduce.py) as well.
+Let me know if you want the actual Python code template (`02_lambda_map_filter_reduce.py`) as well.

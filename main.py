@@ -2,7 +2,7 @@ import os
 
 structure = {
     "Month1-6": {
-        "Month1_Python_DS": ["Python_Basics", "DataScience_Basics", "Streamlit_Apps"],
+        "Month1_Python_DS": ["Python_Advanced", "DataScience_Basics", "Streamlit_Apps"],
         "Month2_Math_ML": ["Math_Notes", "Statistics", "Data_Preprocessing"],
         "Month3_ML_DL_APIs": ["ML_Models", "FastAPI_Projects", "TensorFlow"],
         "Month4_NLP_CV_LangChain": ["NLP_Projects", "OpenCV", "LangChain_Bots"],
