@@ -1,0 +1,9 @@
+Name,Age,Email,Signup Date,Score
+Alice,25,alice@example.com,2023-05-01,85
+Bob,,bob@example.com,2023-05-03,
+Charlie,35,,2023-06-10,92
+alice,25,alice@example.com,2023-05-01,85
+Diana,28,diana@EXAMPLE.COM,,88
+Eve,thirty,eve@example.com,2023/07/15,91
+Frank,40,frank@example.com,2023-07-20,NaN
+,,unknown@domain.com,,
