@@ -40,7 +40,7 @@
 | ✅ Day 3 | Prompt Engineering Fundamentals | `03_prompt_basics.md` |
 | ✅ Day 4 | Role, Zero-shot & Few-shot Prompting | `04_prompt_advanced.md` |
 | ✅ Day 5-6 | **Mini Project** – Prompt-based Trivia App/Chatbot | `05_mini_project.ipynb` |
-| ✅ Day 7 | Weekly Summary + GitHub Push | `README.md` |
+| ✅ Day 7 | Weekly Summary | `README.md` |
 
 ---
 
