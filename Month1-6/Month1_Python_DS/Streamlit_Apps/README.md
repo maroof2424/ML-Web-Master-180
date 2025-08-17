@@ -1,3 +1,10 @@
-# Streamlit_Apps
+### 🗓️ Week 4 – Streamlit + AI Use Cases
 
-Content for this topic goes here.
+📁 Folder: `Streamlit_Apps/`
+
+Topics:
+- ✅ Streamlit UI Basics
+- ✅ Integration with Pandas + Matplotlib
+- ✅ AI: History, Use Cases, Ethics
+
+**🎯 Project:** EDA Dashboard + AI Assistant
