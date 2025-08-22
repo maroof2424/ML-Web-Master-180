@@ -1,1 +1,11 @@
-# data.csv - Week 4 Placeholder
+PassengerId,Name,Age,Sex,Survived,Class,Fare
+1,Braund Mr. Owen,22,male,0,3,7.25
+2,Cumings Mrs. John,38,female,1,1,71.28
+3,Heikkinen Miss. Laina,26,female,1,3,7.92
+4,Futrelle Mrs. Jacques,35,female,1,1,53.10
+5,Allen Mr. William,35,male,0,3,8.05
+6,Moran Mr. James,27,male,0,3,8.46
+7,McCarthy Mr. Timothy,54,male,0,1,51.86
+8,Palsson Master. Gosta,2,male,0,3,21.07
+9,Johnson Mrs. Oscar,27,female,1,2,11.13
+10,Nasser Mrs. Nicholas,14,female,1,2,30.07
