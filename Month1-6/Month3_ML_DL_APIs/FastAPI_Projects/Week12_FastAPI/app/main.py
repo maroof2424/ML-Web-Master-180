@@ -1,22 +1,10 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from .routes import router as predict_router
 
-app = FastAPI(title="FastAPI Basics Demo",version="1.0")
+app = FastAPI(title="ML Model API")
 
-class Item(BaseModel):
-    name: str
-    price: float
-    quantity: int
+app.include_router(predict_router)
 
 @app.get("/")
-def read_root():
-    return {"msg":"Hello from FastAPI"}
-
-@app.post("/items/")
-def create_item(item: Item):
-    total = item.price * item.quantity
-    return {
-        "Item name":item.name,
-        "total_price": total,
-        "message":f"Recived item {item.name}"
-    }
+def root():
+    return {"message":"Wellcome to ML Model API!..."}
