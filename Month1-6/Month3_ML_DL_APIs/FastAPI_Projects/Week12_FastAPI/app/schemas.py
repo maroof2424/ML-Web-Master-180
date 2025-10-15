@@ -12,3 +12,4 @@ class IrisInput(BaseModel):
         if not isinstance(v,(float,int)):
             raise ValueError("Value must be numerical")
         return v
+        
