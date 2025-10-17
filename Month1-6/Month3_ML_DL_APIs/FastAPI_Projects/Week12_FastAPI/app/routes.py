@@ -3,13 +3,9 @@ from .schemas import IrisInput
 import joblib
 import numpy as np
 
-
-
 router = APIRouter()
 
-
 model = joblib.load("model/model.pkl")
-
 
 @router.post("/predict")
 def predict_species(data: IrisInput):
