@@ -1,9 +1,4 @@
 
-
-
-### 🧾 **README.md** (Full Content)
-
-````markdown
 # 🧠 Week 13 – NLP Basics
 
 Welcome to **Week 13** of your Machine Learning & AI journey!  
@@ -90,7 +85,7 @@ After completing Week 13:
 
 🧠 *“Language is the bridge between humans and machines — mastering NLP means mastering that bridge.”*
 
-```
+
 
 ---
 
