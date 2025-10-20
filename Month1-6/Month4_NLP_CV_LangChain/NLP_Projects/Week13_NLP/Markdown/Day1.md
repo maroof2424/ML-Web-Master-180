@@ -3,21 +3,26 @@
 # -------------------------------------
 
 # Install required packages (if not already installed)
+```
 !pip install nltk
-
+```
 # Import libraries
+```
 import nltk
 import string
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer, WordNetLemmatizer
-
+```
 # Download NLTK data (only first time)
+```
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
+```
 
 # 📄 Sample text
+```
 text = "Natural Language Processing (NLP) helps computers understand human language. It's awesome!"
 
 print("🔹 Original Text:\n", text)
