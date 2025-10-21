@@ -12,7 +12,7 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 from collections import Counter
 import matplotlib.pyplot as plt
 
-nltk.download('punkt')
+nltk.download('punkt_tab')
 ```
 
 ---
