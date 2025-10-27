@@ -1,0 +1,23 @@
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+llm = ChatGoogleGenerativeAI(
+    model="gemini-1.5-flash",  
+    temperature=0.7,
+    google_api_key=os.getenv("GOOGLE_API_KEY")
+)
+
+prompt = ChatPromptTemplate.from_template(
+    "You are an AI assistant. Answer clearly:\n\n{question}"
+)
+
+parser = StrOutputParser()
+chain = prompt | llm | parser
+
+response = chain.invoke({"question": "Explain LangChain in simple terms."})
+print("🤖 Response:\n", response)
