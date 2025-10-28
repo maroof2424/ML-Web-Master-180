@@ -1,35 +1,43 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain_community.memory import ConversationBufferMemory
+from langchain.memory import ConversationBufferMemory
+from langchain.chains import LLMChain
 from dotenv import load_dotenv
 import os
 
+# 🔹 Load API key
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# Initialize model
+# 🔹 Initialize model
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash",
     temperature=0.7,
     google_api_key=GOOGLE_API_KEY
 )
 
-# Memory
-memory = ConversationBufferMemory(memory_key="chat_history")
+# 🔹 Conversation Memory
+memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-# Prompt
-prompt = ChatPromptTemplate.from_template(
-    "You are a helpful AI assistant.\nPrevious conversation:\n{chat_history}\nUser Question:\n{question}"
+# 🔹 Prompt Template
+prompt = ChatPromptTemplate.from_template("""
+You are a helpful AI assistant.
+Previous conversation:
+{chat_history}
+User Question:
+{question}
+""")
+
+# 🔹 Chain that links LLM + Memory + Prompt
+chain = LLMChain(
+    llm=llm,
+    prompt=prompt,
+    memory=memory,
+    verbose=True
 )
 
-# Output parser
-parser = StrOutputParser()
-
-# Chain (Prompt → Model → Parser)
-chain = prompt | llm | parser
-
-# Example conversation
+# 🔹 Example Conversation
 user_inputs = [
     "Hello! Who created LangChain?",
     "Can you explain it in simple words?",
@@ -37,9 +45,6 @@ user_inputs = [
 ]
 
 for question in user_inputs:
-    context = memory.load_memory_variables({})["chat_history"]
-    response = chain.invoke({"question": question, "chat_history": context})
-    print(f"\nUser: {question}")
+    response = chain.run(question=question)
+    print(f"\n🧠 User: {question}")
     print(f"🤖 Bot: {response}")
-    # Update memory
-    memory.save_context({"question": question}, {"answer": response})
