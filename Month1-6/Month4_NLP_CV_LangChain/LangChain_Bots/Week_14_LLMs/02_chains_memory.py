@@ -6,21 +6,17 @@ from langchain.chains import LLMChain
 from dotenv import load_dotenv
 import os
 
-# 🔹 Load API key
 load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# 🔹 Initialize model
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash",
     temperature=0.7,
     google_api_key=GOOGLE_API_KEY
 )
 
-# 🔹 Conversation Memory
 memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
-# 🔹 Prompt Template
 prompt = ChatPromptTemplate.from_template("""
 You are a helpful AI assistant.
 Previous conversation:
@@ -29,7 +25,6 @@ User Question:
 {question}
 """)
 
-# 🔹 Chain that links LLM + Memory + Prompt
 chain = LLMChain(
     llm=llm,
     prompt=prompt,
@@ -37,7 +32,6 @@ chain = LLMChain(
     verbose=True
 )
 
-# 🔹 Example Conversation
 user_inputs = [
     "Hello! Who created LangChain?",
     "Can you explain it in simple words?",
