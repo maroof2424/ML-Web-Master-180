@@ -1,5 +1,0 @@
-treamlit
-plotly 
-prophet 
-statsmodels 
-pandas
