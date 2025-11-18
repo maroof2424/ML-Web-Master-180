@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+    <form>
+        <h2>ML Input Form</h2>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" required>
+
+        <label for="glucose">Glucose Level:</label>
+        <input type="number" id="glucose" name="glucose" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="results-grid">
+        <div class="card">Age: 25</div>
+        <div class="card">Weight: 70kg</div>
+        <div class="card">Glucose: 120</div>
+        <div class="card">BMI: 24.5</div>
+    </div>
+</div>
+</body>
+</html>
