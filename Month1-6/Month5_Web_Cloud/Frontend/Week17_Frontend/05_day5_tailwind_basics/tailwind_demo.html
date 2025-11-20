@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">Tailwind Demo</h1>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+            Contact
+        </button>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="text-center py-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+        <h2 class="text-4xl font-bold mb-4">Welcome to TailwindCSS</h2>
+        <p class="text-lg mb-6">Fastest way to build beautiful UI using utility classes.</p>
+        <button class="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+            Get Started
+        </button>
+    </section>
+
+    <!-- CARDS SECTION -->
+    <section class="px-6 py-12">
+        <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold mb-2">Utility Classes</h3>
+                <p class="text-gray-700">
+                    Build anything with pre-made utility classes. No custom CSS needed.
+                </p>
+                <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold mb-2">Responsive</h3>
+                <p class="text-gray-700">
+                    Tailwind makes responsive design super easy using breakpoints.
+                </p>
+                <button class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600">
+                    Learn More
+                </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold mb-2">Faster Workflow</h3>
+                <p class="text-gray-700">
+                    Spend more time building and less time switching between files.
+                </p>
+                <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                    Learn More
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow mt-10 mb-16">
+
+        <h2 class="text-2xl font-bold mb-4 text-center">Contact Form</h2>
+
+        <form class="space-y-4">
+
+            <div>
+                <label class="block text-gray-600 mb-1">Name</label>
+                <input 
+                    type="text" 
+                    class="w-full border px-3 py-2 rounded focus:outline-none focus:ring focus:ring-blue-300"
+                    placeholder="Enter your name">
+            </div>
+
+            <div>
+                <label class="block text-gray-600 mb-1">Email</label>
+                <input 
+                    type="email" 
+                    class="w-full border px-3 py-2 rounded focus:outline-none focus:ring focus:ring-blue-300"
+                    placeholder="Enter your email">
+            </div>
+
+            <div>
+                <label class="block text-gray-600 mb-1">Message</label>
+                <textarea 
+                    class="w-full border px-3 py-2 rounded focus:outline-none focus:ring focus:ring-blue-300"
+                    rows="4"
+                    placeholder="Write something..."></textarea>
+            </div>
+
+            <button 
+                class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+                Submit
+            </button>
+
+        </form>
+    </section>
+
+</body>
+</html>
