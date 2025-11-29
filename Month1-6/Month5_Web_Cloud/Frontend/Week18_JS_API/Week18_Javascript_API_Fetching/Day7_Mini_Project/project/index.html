@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes Prediction UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Diabetes Prediction</h1>
+
+  <form id="predict-form">
+    <div class="input-group">
+      <label>Pregnancies</label>
+      <input type="number" id="pregnancies" required />
+    </div>
+
+    <div class="input-group">
+      <label>Glucose</label>
+      <input type="number" id="glucose" required />
+    </div>
+
+    <div class="input-group">
+      <label>Blood Pressure</label>
+      <input type="number" id="bp" required />
+    </div>
+
+    <div class="input-group">
+      <label>Skin Thickness</label>
+      <input type="number" id="skin" required />
+    </div>
+
+    <div class="input-group">
+      <label>Insulin</label>
+      <input type="number" id="insulin" required />
+    </div>
+
+    <div class="input-group">
+      <label>BMI</label>
+      <input type="number" id="bmi" required />
+    </div>
+
+    <div class="input-group">
+      <label>Diabetes Pedigree</label>
+      <input type="number" id="dpf" required />
+    </div>
+
+    <div class="input-group">
+      <label>Age</label>
+      <input type="number" id="age" required />
+    </div>
+
+    <button id="predict-btn" type="submit">Predict</button>
+  </form>
+
+  <!-- Loader -->
+  <div id="loader" class="loader hidden"></div>
+
+  <!-- Result -->
+  <div id="result" class="result hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
