@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple HTML • CSS • JS Web</title>
+  <meta name="description" content="A small single-file example with responsive layout, dark mode, and tiny interactive features." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="app">
+    <header>
+      <div class="brand">
+        <div class="logo">W</div>
+        <div>
+          <div style="font-weight:800">Mini Web</div>
+          <div class="muted small">HTML • CSS • JS example</div>
+        </div>
+      </div>
+      <div class="top-right">
+        <nav>
+          <a href="#features">Features</a>
+          <a href="#try">Try</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" title="Toggle dark/light">🌙</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Simple responsive web page</h1>
+        <p class="lead">Yeh single-file example hai — responsive layout, dark mode, small to‑do demo, and a contact validator. Step-by-step logic neeche explain karunga.</p>
+        <div id="features" class="features">
+          <div class="feature"><strong>Responsive</strong><div class="muted small">Works on mobile and desktop</div></div>
+          <div class="feature"><strong>Dark mode</strong><div class="muted small">Toggle with the button</div></div>
+          <div class="feature"><strong>Small JS demo</strong><div class="muted small">Todo + form validation</div></div>
+        </div>
+
+        <hr style="margin:16px 0">
+        <h3 class="small">Try a tiny to-do</h3>
+        <div class="todo card" style="padding:12px;margin:8px 0">
+          <div class="todo-input">
+            <input id="todoText" placeholder="Add a task..." />
+            <button id="addTodo">Add</button>
+          </div>
+          <ul id="todoList" class="todo"></ul>
+        </div>
+
+      </div>
+
+      <aside class="card" id="try">
+        <h3 style="margin-top:0">Contact form</h3>
+        <form id="contactForm">
+          <label class="small">Name</label>
+          <input id="name" required placeholder="Your name" />
+          <label class="small">Email</label>
+          <input id="email" type="email" required placeholder="you@example.com" />
+          <label class="small">Message</label>
+          <textarea id="message" rows="4" placeholder="Short message..."></textarea>
+          <div style="display:flex;gap:8px;margin-top:10px">
+            <button type="submit">Send</button>
+            <button id="clearForm" type="button">Clear</button>
+          </div>
+          <div id="formResult" class="muted small" style="margin-top:8px"></div>
+        </form>
+      </aside>
+
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <h3 style="margin-top:0">What's inside (quick)</h3>
+      <p class="muted small">This file uses plain CSS variables for light/dark themes and minimal JS for DOM updates. No frameworks — easy to read and modify.</p>
+    </section>
+
+    <footer>
+      Built with ❤️ — open and simple. Try editing the file and reload.
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
