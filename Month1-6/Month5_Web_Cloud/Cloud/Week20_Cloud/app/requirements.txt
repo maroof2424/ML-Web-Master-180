@@ -1,1 +1,6 @@
-# requirements.txt - starter file
+fastapi
+uvicorn
+joblib
+numpy
+scikit-learn
+gunicorn

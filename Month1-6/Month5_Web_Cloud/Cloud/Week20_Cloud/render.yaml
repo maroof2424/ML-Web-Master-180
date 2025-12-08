@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: week20-ml-backend
+    env: python
+    buildCommand: pip install -r app/requirements.txt
+    startCommand: gunicorn -k uvicorn.workers.UvicornWorker app.main:app
+    plan: free
