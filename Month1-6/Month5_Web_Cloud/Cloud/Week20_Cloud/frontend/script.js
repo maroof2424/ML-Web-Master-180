@@ -1,10 +1,20 @@
-async function predict() {
-    const f1 = parseFloat(document.getElementById("f1").value);
-    const f2 = parseFloat(document.getElementById("f2").value);
-    const f3 = parseFloat(document.getElementById("f3").value);
+async function getPrediction() {
+    const data = {
+        feature1: parseFloat(document.getElementById("f1").value),
+        feature2: parseFloat(document.getElementById("f2").value),
+        feature3: parseFloat(document.getElementById("f3").value)
+    };
 
-    // Temporary demo logic
-    const prediction = (f1 + f2 + f3) > 50 ? "High" : "Low";
+    const response = await fetch("https://YOUR_BACKEND_URL/predict", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    });
 
-    document.getElementById("result").innerText = "Prediction: " + prediction;
+    const result = await response.json();
+
+    document.getElementById("result").innerText =
+        "Prediction → " + result.prediction;
 }
