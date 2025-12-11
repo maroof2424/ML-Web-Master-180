@@ -1,11 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import joblib
 import numpy as np
+import joblib
+
+# Load ML model
+model = joblib.load("model.pkl")
 
 app = FastAPI()
-
-model = joblib.load("model.pkl")
 
 class InputData(BaseModel):
     feature1: float
@@ -16,8 +17,8 @@ class InputData(BaseModel):
 def predict(data: InputData):
     arr = np.array([[data.feature1, data.feature2, data.feature3]])
     pred = model.predict(arr)
-    return {"prediction": int(pred[0])}
+    return {"prediction": float(pred[0])}
 
 @app.get("/")
 def home():
-    return {"status": "backend running!"}
+    return {"message": "Backend is live!"}
