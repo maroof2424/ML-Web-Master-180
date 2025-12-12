@@ -15,6 +15,7 @@ async function getPrediction() {
 
     const result = await response.json();
 
+    
     document.getElementById("result").innerText =
         "Prediction → " + result.prediction;
 }
