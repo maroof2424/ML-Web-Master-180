@@ -4,11 +4,11 @@ base_folder = "Week21_SQL_Basics"
 
 structure = {
     "notebooks": [
-        "01_select.ipynb",
-        "02_where.ipynb",
-        "03_groupby.ipynb",
-        "04_joins.ipynb",
-        "05_mini_project.ipynb"
+        "01_select.py",
+        "02_where.py",
+        "03_groupby.py",
+        "04_joins.py",
+        "05_mini_project.py"
     ],
     "README.md": None
 }
