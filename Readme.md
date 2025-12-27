@@ -182,7 +182,7 @@ Would you like me to update the Notion Tracker or GitHub folder structure accord
 
 ---
 
-## 📦 **Month 6: SQL + Excel + Tableau + Capstone**
+## 📦 **Month 6: SQL + Excel + PowerBI + Capstone**
 
 ### 🗓️ Week 21 – SQL Basics
 
@@ -196,7 +196,7 @@ Would you like me to update the Notion Tracker or GitHub folder structure accord
 
 ---
 
-### 🗓️ Week 23 – Tableau Dashboards
+### 🗓️ Week 23 – PowerBI Dashboards
 
 * Stories, Filters, KPIs, Graphs
 
